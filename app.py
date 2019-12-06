@@ -29,6 +29,8 @@ def insert_task():
     tasks.insert_one(request.form.to_dict())
     return redirect(url_for('get_tasks'))
 
+#temp code for heroku push
+tempvar =1
 
 @app.route('/edit_task/<task_id>')
 def edit_task(task_id):
